@@ -1,4 +1,4 @@
-package main
+package proxy
 
 import (
 	"flag"
@@ -10,7 +10,7 @@ import (
 	"syscall"
 )
 
-func main() {
+func Main() {
 	f := os.NewFile(3, "signal-parent")
 	host, container := parseHostContainerAddrs()
 
