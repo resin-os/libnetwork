@@ -17,7 +17,7 @@ func getPorts() []types.TransportPort {
 func TestLinkNew(t *testing.T) {
 	ports := getPorts()
 
-	link := newLink("172.0.17.3", "172.0.17.2", ports, "docker0")
+	link := newLink("172.0.17.3", "172.0.17.2", ports, "balena0")
 
 	if link == nil {
 		t.FailNow()
@@ -33,7 +33,7 @@ func TestLinkNew(t *testing.T) {
 			t.Fail()
 		}
 	}
-	if link.bridge != "docker0" {
+	if link.bridge != "balena0" {
 		t.Fail()
 	}
 }
