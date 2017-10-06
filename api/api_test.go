@@ -23,7 +23,7 @@ import (
 
 const (
 	bridgeNetType = "bridge"
-	bridgeName    = "docker0"
+	bridgeName    = "balena0"
 )
 
 func i2s(i interface{}) string {
