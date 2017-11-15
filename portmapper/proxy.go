@@ -12,7 +12,7 @@ import (
 	"github.com/ishidawataru/sctp"
 )
 
-var userlandProxyCommandName = "docker-proxy"
+var userlandProxyCommandName = "balena-proxy"
 
 type userlandProxy interface {
 	Start() error
